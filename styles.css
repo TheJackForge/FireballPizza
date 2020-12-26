@@ -188,7 +188,7 @@ a {
 .menu-item {
     width: 45%;
     height: 60px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 20px;
 }
 

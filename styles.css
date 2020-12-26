@@ -254,6 +254,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 33.33%;
+    height: 1000px;
     background-color: var(--primary-color);
 }
 
@@ -265,6 +266,33 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 70% 50%;
+}
+
+.salad-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.salad-items-container {
+    width: 90%;
+}
+
+.salad-item {
+    border-bottom: 1px solid var(--secondary-color);
+    height: 60px;
+    margin: 20px 0;
+}
+
+.salad-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.4rem;
+}
+
+.salad-item-ingredients p {
+    margin: 0 10px;
+    font-size: 0.8rem;
 }
 
 .appetizer-container {
@@ -288,6 +316,34 @@ a {
     background-position: 60% 50%;
 }
 
+.appetizer-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.appetizer-items-container {
+    width: 90%;
+}
+
+.appetizer-item {
+    border-bottom: 1px solid var(--secondary-color);
+    height: 60px;
+    margin: 20px 0;
+}
+
+.appetizer-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.4rem;
+}
+
+.appetizer-item-ingredients p {
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+
 .sandwich-container {
     display: flex;
     flex-direction: column;
@@ -305,5 +361,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 50%;
+}
+
+.sandwich-items-container p:nth-of-type(1) {
+    font-size: 1.4rem;
 }
 

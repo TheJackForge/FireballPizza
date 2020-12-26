@@ -1,4 +1,6 @@
 const menuContainer = document.getElementById('menu-item-container')
+const saladContainer = document.getElementById('salad-items-container')
+const appetizerContainer = document.getElementById('appetizer-items-container')
 
 const pizzaOptions = [
     {
@@ -71,8 +73,62 @@ const pizzaOptions = [
         largePrice: 23,
         toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
     },
+]
 
+const saladOptions = [
+    {
+        type: 'House Salad',
+        price: 5,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Chicken Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Chef\'s Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+]
 
+const appetizerOptions = [
+    {
+        type: 'House Salad',
+        price: 5,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Chicken Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Chef\'s Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
 ]
 
 function populateMenu() {
@@ -93,4 +149,44 @@ function populateMenu() {
 })
 }
 
+function populateSaladMenu() {
+    saladOptions.forEach((salad) => {
+        let saladItem = document.createElement('div');
+        saladItem.classList.add('salad-item');
+        saladItem.innerHTML = `
+        <div class="type-price-div">
+            <p>${salad.type}</p>
+            <div class="salad-pricing">
+            <span>${salad.price}</span>
+            </div>
+        </div>
+        <div class="salad-item-ingredients">
+            <p>${salad.ingredients}</p>
+        </div>
+        `
+    saladContainer.appendChild(saladItem);
+    })
+}
+
+function populateAppetizerMenu() {
+    appetizerOptions.forEach((appetizer) => {
+        let appetizerItem = document.createElement('div');
+        appetizerItem.classList.add('appetizer-item');
+        appetizerItem.innerHTML = `
+        <div class="type-price-div">
+            <p>${appetizer.type}</p>
+            <div class="appetizer-pricing">
+            <span>${appetizer.price}</span>
+            </div>
+        </div>
+        <div class="appetizer-item-ingredients">
+            <p>${appetizer.ingredients}</p>
+        </div>
+        `
+    appetizerContainer.appendChild(appetizerItem);
+    })
+}
+
 populateMenu();
+populateSaladMenu();
+populateAppetizerMenu();

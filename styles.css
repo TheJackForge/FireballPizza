@@ -144,7 +144,7 @@ a {
 
 .pizza-menu {
     display: flex;
-    height: 800px;
+    height: 1000px;
     width: 100%;
     background-color: var(--primary-color);
 }
@@ -157,9 +157,6 @@ a {
 }
 
 .pizza-menu-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 60%;
 }
 
@@ -168,4 +165,39 @@ a {
     font-family: 'Nova Flat', cursive;
     font-size: 3rem;
     margin: 1rem;
+}
+
+.menu-decorative-line {
+    height: 2px;
+    width: 400px;
+    color: black;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 45%;
+    height: 100px;
+    border: 1px solid black;
+    margin: 0 30px;
+}
+
+.type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type-price-div p {
+    font-size: 1.5rem;
+}
+
+.size-pricing {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 1.5rem;
 }

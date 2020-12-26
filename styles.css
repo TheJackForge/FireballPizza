@@ -16,6 +16,7 @@
 body {
     background-color: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 
 a {
@@ -134,10 +135,6 @@ a {
     font-size: 3rem;
 }
 
-.divider-space-1 p {
-    max-width: 50%;
-}
-
 .menu-container {
     display: flex;
     flex-direction: column;
@@ -147,7 +144,7 @@ a {
 
 .pizza-menu {
     display: flex;
-    height: 1000px;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
 }
@@ -173,23 +170,40 @@ a {
     margin: 30px;
 }
 
-.menu-decorative-line {
-    height: 2px;
-    width: 400px;
-    color: black;
+.pizza-menu-header p {
+    font-size: 0.8rem;
+}
+
+.pizza-menu-header p:nth-of-type(1) {
+    font-size: 1.8rem;
+}
+
+.pizza-menu-header p:nth-of-type(2) {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.pizza-menu-header p:nth-of-type(3) {
+    margin-top: 1rem;
+    line-height: 2;
+    max-width: 60%;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .menu-item-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 4rem;
 }
 
 .menu-item {
-    width: 45%;
+    width: 90%;
     height: 60px;
-    /* border: 1px solid black; */
-    margin: 0 20px;
+    border-bottom: 1px solid black;
+    margin: 20px;
 }
 
 .type-price-div {
@@ -212,4 +226,11 @@ a {
 
 .pizza-item-ingredients {
     margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.specials-container {
+    height: 600px;
+    width: 100%;
+    background-color:rgb(5, 56, 28)
 }

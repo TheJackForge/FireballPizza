@@ -14,7 +14,64 @@ const pizzaOptions = [
         mediumPrice: 15,
         largePrice: 19,
         toppings: 'fresh mozzarella, pepperoni'
-    }
+    },
+    {
+        type: 'Hawaiian',
+        smallPrice: 12,
+        mediumPrice: 15,
+        largePrice: 19,
+        toppings: 'pineapple, ham, tomato sauce and cheese'
+    },
+    {
+        type: 'Deluxe',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+    },
+    {
+        type: 'Veggie',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+    },
+    {
+        type: 'BBQ Chicken',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+    },
+    {
+        type: 'Meat Explosion',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+    },
+    {
+        type: 'Donair',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
+    },
+    {
+        type: 'Donair',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
+    },
+    {
+        type: 'Donair',
+        smallPrice: 14,
+        mediumPrice: 19,
+        largePrice: 23,
+        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
+    },
+
 
 ]
 

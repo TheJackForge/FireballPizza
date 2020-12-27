@@ -33,7 +33,8 @@ a {
     width: 100%;
     height: 500px;
     background-color: #1a1a1a;
-    font-family: 'Nova Flat', cursive;
+    font-family: 'Montserrat';
+    font-weight: lighter;
 }
 
 .nav-list {
@@ -76,8 +77,9 @@ a {
 }
 
 .header-logo h1 {
-    font-size: 10rem;
+    font-size: 8rem;
     margin: 0;
+    font-weight: 300;
 }
 
 .main-content {
@@ -99,7 +101,9 @@ a {
     width: 400px;
     color:  #1a1a1a;
     font-size: 2.4rem;
-    font-family: 'Nova Flat', cursive;
+    /* font-family: 'Nova Flat', cursive; */
+    font-family: 'Montserrat';
+    font-weight: 400;
 }
 
 .story-section-2 {
@@ -108,15 +112,15 @@ a {
     font-size: 1.2rem;
     font-family: sans-serif;
     color:  #1a1a1a;
-    font-weight: 400;
+    font-weight: 300;
     font-family: inherit;
 }
 
 
 .showcase-container-1 {
     width: 100%;
-    height: 600px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/showcase-photo-1-pizza.jpg');
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/showcase-photo-4-pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 35% 70%;
@@ -231,41 +235,40 @@ a {
 
 .divider-space-2 {
     width: 100%;
-    height: 300px;
-    background-color:#1a1a1a;
+    height: 100px;
     display: flex;
     justify-content:center;
     align-items: center;
     color: var(--primary-color);
-    background-color:#1a1a1a;
+    background-color:var(--primary-color);
     font-size: 3rem;
 }
 
 .other-items-container {
     display: flex;
     justify-content: center;
-    height: 600px;
     width: 100%;
-    background-color:rgb(5, 56, 28)
+    background-color: var(--secondary-color);
+    margin-bottom: 3rem;
 }
 
 .salad-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33.33%;
-    height: 1000px;
+    width: 50%;
     background-color: var(--primary-color);
 }
 
 .salad-image-header {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-salad-001.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-salad-003.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 70% 50%;
+    background-position: 10% 50%;
+    margin-bottom: 2rem;
 }
 
 .salad-menu-header p:nth-of-type(1) {
@@ -296,24 +299,22 @@ a {
 }
 
 .appetizer-container {
-    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33.33%;
+    width:50%;
     background-color: var(--primary-color);
-    border-left: 1px solid var(--secondary-color);
-    border-right: 1px solid var(--secondary-color);
 }
 
 .appetizer-image-header {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-color: #1a1a1a;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-appetizers-001.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 50%;
+    margin-bottom: 2rem;
 }
 
 .appetizer-menu-header p:nth-of-type(1) {
@@ -344,17 +345,22 @@ a {
 }
 
 
-.sandwich-container {
+.appetizer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33.33%;
+    width:50%;
     background-color: var(--primary-color);
+}
 
+.other-items-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .sandwich-image-header {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-color: #1a1a1a;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-burgers-sandwiches-001.jpg');
@@ -363,7 +369,79 @@ a {
     background-position: 60% 50%;
 }
 
-.sandwich-items-container p:nth-of-type(1) {
+.sandwich-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    background-color: var(--primary-color);
+}
+
+.sandwich-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.sandwich-items-container {
+    width: 90%;
+}
+
+.sandwich-item {
+    border-bottom: 1px solid var(--secondary-color);
+    height: 60px;
+    margin: 20px 0;
+}
+
+.sandwich-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
     font-size: 1.4rem;
+}
+
+.sandwich-item-ingredients p {
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.other-items-container-2 {
+    height: 1000px;
+    width: 100%;
+}
+
+.kids-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    background-color: #053114;
+    color: var(--primary-color);
+}
+
+.kids-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.kids-items-container {
+    width: 90%;
+}
+
+.kids-item {
+    border-bottom: 1px solid var(--secondary-color);
+    height: 60px;
+    margin: 20px 0;
+}
+
+.kids-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.4rem;
+}
+
+.kids-item-ingredients p {
+    margin: 0 10px;
+    font-size: 0.8rem;
 }
 

@@ -15,14 +15,14 @@ const pizzaOptions = [
         smallPrice: 12,
         mediumPrice: 15,
         largePrice: 19,
-        toppings: 'fresh mozzarella, pepperoni'
+        toppings: 'plenty of \'roni, cheese'
     },
     {
         type: 'Hawaiian',
         smallPrice: 12,
         mediumPrice: 15,
         largePrice: 19,
-        toppings: 'pineapple, ham, tomato sauce and cheese'
+        toppings: 'ham, pineapple, note: pineapple does belong on pizza'
     },
     {
         type: 'Deluxe',
@@ -36,28 +36,28 @@ const pizzaOptions = [
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+        toppings: 'all the vegetables even the gross ones',
     },
     {
         type: 'BBQ Chicken',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+        toppings: 'chicken, our homestyle bbq sauce, onions, made by a chef wearing New Balance sneakers',
     },
     {
         type: 'Meat Explosion',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+        toppings: 'pepperoni, Italian sausage, ham, meat you didn\'t even know existed, meat',
     },
     {
         type: 'Donair',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
+        toppings: 'donair meat, sweet sauce, our chef will say "yes boss" as he sends it out to you',
     },
     {
         type: 'Donair',
@@ -131,6 +131,10 @@ const appetizerOptions = [
     },
 ]
 
+const sandwichOptions = [
+
+]
+
 function populateMenu() {
     pizzaOptions.forEach( (pizza) => {
     let menuItem = document.createElement('div');
@@ -181,6 +185,25 @@ function populateAppetizerMenu() {
         </div>
         <div class="appetizer-item-ingredients">
             <p>${appetizer.ingredients}</p>
+        </div>
+        `
+    appetizerContainer.appendChild(appetizerItem);
+    })
+}
+
+function populateSandwichMenu() {
+    appetizerOptions.forEach((sandwich) => {
+        let sandwichItem = document.createElement('div');
+        sandwichItem.classList.add('appetizer-item');
+        sandwichItem.innerHTML = `
+        <div class="type-price-div">
+            <p>${sandwich.type}</p>
+            <div class="appetizer-pricing">
+            <span>${sandwich.price}</span>
+            </div>
+        </div>
+        <div class="sandwich-item-ingredients">
+            <p>${sandwich.ingredients}</p>
         </div>
         `
     appetizerContainer.appendChild(appetizerItem);

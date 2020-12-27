@@ -1,6 +1,8 @@
-const menuContainer = document.getElementById('menu-item-container')
-const saladContainer = document.getElementById('salad-items-container')
-const appetizerContainer = document.getElementById('appetizer-items-container')
+const menuContainer = document.getElementById('menu-item-container');
+const saladContainer = document.getElementById('salad-items-container');
+const appetizerContainer = document.getElementById('appetizer-items-container');
+const sandwichContainer = document.getElementById('sandwich-items-container');
+const kidsContainer = document.getElementById('kids-items-container');
 
 const pizzaOptions = [
     {
@@ -132,7 +134,64 @@ const appetizerOptions = [
 ]
 
 const sandwichOptions = [
+    {
+        type: 'House Salad',
+        price: 5,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Chicken Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Chef\'s Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+    {
+        type: 'Caesar Salad',
+        price: 7,
+        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+    },
+]
 
+const kidsOptions = [
+    {
+        type: '1000 Layer Cheese Pizza',
+        price: 5,
+        ingredients: 'Hey kid, you want cheese? Here\'s 1000 layers to stick in your face.'
+    },
+    {
+        type: 'Dinosaur Pepperoni Pizza',
+        price: 6,
+        ingredients: 'Kids love dinosaurs, so here\'s some dinosaur meat. We hunted it just for you.'
+    },
+    {
+        type: 'Chicken Nuggets',
+        price: 6,
+        ingredients: 'It\'s a plate of chicken nuggets for all of you normie kids out there.'
+    },
+    {
+        type: 'Hotdog',
+        price: 6,
+        ingredients: 'I can\'t believe your parents are going to pay for a hotdog at a restaurant.'
+    },
+    {
+        type: 'The Kid\'s Salad',
+        price: 6,
+        ingredients: 'You\'re a kid, why are you eating a salad?'
+    },
+    {
+        type: 'Steak Dinner',
+        price: 28,
+        ingredients: 'Ordering this will piss your parents off. Do it.'
+    },
 ]
 
 function populateMenu() {
@@ -194,11 +253,11 @@ function populateAppetizerMenu() {
 function populateSandwichMenu() {
     appetizerOptions.forEach((sandwich) => {
         let sandwichItem = document.createElement('div');
-        sandwichItem.classList.add('appetizer-item');
+        sandwichItem.classList.add('sandwich-item');
         sandwichItem.innerHTML = `
         <div class="type-price-div">
             <p>${sandwich.type}</p>
-            <div class="appetizer-pricing">
+            <div class="sandwich-pricing">
             <span>${sandwich.price}</span>
             </div>
         </div>
@@ -206,10 +265,31 @@ function populateSandwichMenu() {
             <p>${sandwich.ingredients}</p>
         </div>
         `
-    appetizerContainer.appendChild(appetizerItem);
+    sandwichContainer.appendChild(sandwichItem);
+    })
+}
+
+function populateKidsMenu() {
+    kidsOptions.forEach((kids) => {
+        let kidsItem = document.createElement('div');
+        kidsItem.classList.add('kids-item');
+        kidsItem.innerHTML = `
+        <div class="type-price-div">
+            <p>${kids.type}</p>
+            <div class="kids-pricing">
+            <span>${kids.price}</span>
+            </div>
+        </div>
+        <div class="kids-item-ingredients">
+            <p>${kids.ingredients}</p>
+        </div>
+        `
+    kidsContainer.appendChild(kidsItem);
     })
 }
 
 populateMenu();
 populateSaladMenu();
 populateAppetizerMenu();
+populateSandwichMenu();
+populateKidsMenu();

@@ -405,7 +405,6 @@ a {
 }
 
 .other-items-container-2 {
-    height: 1000px;
     width: 100%;
 }
 
@@ -418,9 +417,22 @@ a {
     color: var(--primary-color);
 }
 
+.kids-menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .kids-menu-header p:nth-of-type(1) {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
+}
+
+.kids-menu-header p:nth-of-type(2) {
+    text-align: center;
+    line-height: 2;
+    max-width: 60%;
+    font-size: 0.6rem;
 }
 
 .kids-items-container {
@@ -445,3 +457,166 @@ a {
     font-size: 0.8rem;
 }
 
+.specials-container {
+    height: 600px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.specials-container-header {
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    height: 150px;
+}
+
+.specials-container-header p {
+    color: var(--primary-color);
+    margin-left: 2rem;
+}
+
+
+.current-specials-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.special-1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/img/specials-photo-002-nachos.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-1-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.special-1-container p:nth-of-type(1) {
+    font-size: 2.4rem;
+}
+
+.special-1-container p:nth-of-type(2) {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-1-container p:nth-of-type(3) {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/img/specials-photo-002-nachos.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-2-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+}
+
+.special-2-container p:nth-of-type(1) {
+    font-size: 2.4rem;
+}
+
+.special-2-container p:nth-of-type(2) {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-2-container p:nth-of-type(3) {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/img/specials-photo-002-nachos.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-2-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+}
+
+.special-3-container p:nth-of-type(1) {
+    font-size: 2.4rem;
+}
+
+.special-3-container p:nth-of-type(2) {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-3-container p:nth-of-type(3) {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/img/specials-photo-002-nachos.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-4-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.special-4-container p:nth-of-type(1) {
+    font-size: 2.4rem;
+}
+
+.special-4-container p:nth-of-type(2) {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-4-container p:nth-of-type(3) {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 2rem;
+}

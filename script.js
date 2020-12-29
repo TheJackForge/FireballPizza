@@ -3,6 +3,8 @@ const saladContainer = document.getElementById('salad-items-container');
 const appetizerContainer = document.getElementById('appetizer-items-container');
 const sandwichContainer = document.getElementById('sandwich-items-container');
 const kidsContainer = document.getElementById('kids-items-container');
+const floatingNavBar = document.getElementById('floating-nav-bar');
+
 
 const pizzaOptions = [
     {
@@ -193,6 +195,21 @@ const kidsOptions = [
         ingredients: 'Ordering this will piss your parents off. Do it.'
     },
 ]
+
+// let scroll = window.scrollY;
+// const headerLogo = document.getElementById('header-logo');
+// const headerHeight = headerLogo.offsetHeight;
+
+const navList = document.getElementById('nav-list');
+const navListHeight = navList.offsetHeight;
+console.log(navListHeight);
+
+window.addEventListener('scroll', () => {
+        floatingNavBar.classList.add('active');
+        if (window.scrollY <= 400) {
+            floatingNavBar.classList.remove('active');
+        }
+})
 
 function populateMenu() {
     pizzaOptions.forEach( (pizza) => {

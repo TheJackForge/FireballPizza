@@ -69,6 +69,60 @@ a {
     background-color: red;
 }
 
+.floating-nav-bar {
+    background-color: var(--primary-color);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #383838;
+    z-index: -1;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.floating-nav-bar.active { 
+    opacity: 1;
+    z-index: 1;
+}
+
+.floating-nav-bar a {
+    color: var(--secondary-color);
+}
+
+.floating-nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.floating-nav-list li {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    padding: 0 15px;
+    opacity: 1;
+    font-weight: 600;
+    transition: opacity 1s ease;
+}
+
+.floating-nav-list li:last-child {
+    background-color: red;
+    opacity: 0.6;
+}
+
+.floating-nav-list li:hover {
+    background-color: rgb(77, 77, 80);
+    padding: 0 15px;
+    opacity: 1;
+}
+
+.floating-nav-list li:hover:last-child {
+    background-color: red;
+}
+
 .header-logo {
     display: flex;
     justify-content: center;

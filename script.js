@@ -167,32 +167,32 @@ const kidsOptions = [
     {
         type: '1000 Layer Cheese Pizza',
         price: 5,
-        ingredients: 'Hey kid, you want cheese? Here\'s 1000 layers to stick in your face.'
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
         type: 'Dinosaur Pepperoni Pizza',
         price: 6,
-        ingredients: 'Kids love dinosaurs, so here\'s some dinosaur meat. We hunted it just for you.'
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
         type: 'Chicken Nuggets',
         price: 6,
-        ingredients: 'It\'s a plate of chicken nuggets for all of you normie kids out there.'
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
         type: 'Hotdog',
         price: 6,
-        ingredients: 'I can\'t believe your parents are going to pay for a hotdog at a restaurant.'
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
         type: 'The Kid\'s Salad',
         price: 6,
-        ingredients: 'You\'re a kid, why are you eating a salad?'
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
         type: 'Steak Dinner',
         price: 28,
-        ingredients: 'Ordering this will piss your parents off. Do it.'
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
 ]
 
@@ -222,8 +222,9 @@ function populateMenu() {
                 <span>${pizza.smallPrice}</span><span>${pizza.mediumPrice}</span><span>${pizza.largePrice}</span>
             </div>
         </div>
-            <div class="pizza-item-ingredients"><p>${pizza.toppings}</p>
-        </div>
+        <div class="pizza-item-ingredients"><p>${pizza.toppings}</p></div>
+        <div class="item-bottom-border"></div>
+            
     `
     menuContainer.appendChild(menuItem);
 })

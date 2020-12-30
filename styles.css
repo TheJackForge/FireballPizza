@@ -69,7 +69,7 @@ a {
 .floating-nav-bar {
     background-color: var(--primary-color);
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 70px;
@@ -215,7 +215,7 @@ a {
 }
 
 .pizza-menu-items {
-    width: 90%;
+    width: 80%;
 }
 
 .pizza-menu-header {
@@ -244,9 +244,9 @@ a {
 .pizza-menu-header p:nth-of-type(3) {
     margin-top: 1rem;
     line-height: 2;
-    max-width: 60%;
+    max-width: 90%;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .menu-item-container {
@@ -259,7 +259,7 @@ a {
 
 .menu-item {
     width: 90%;
-    height: 60px;
+    height: 50px;
     border-bottom: 1px solid black;
     margin: 20px;
 }
@@ -267,24 +267,22 @@ a {
 .type-price-div {
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
     font-weight: 500;
 }
 
 .type-price-div p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .size-pricing {
     display: flex;
     justify-content: space-around;
     width: 30%;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .pizza-item-ingredients {
-    margin: 0 10px;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
 .divider-space-2 {
@@ -300,6 +298,7 @@ a {
 
 .other-items-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     background-color: var(--secondary-color);
@@ -310,7 +309,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     background-color: var(--primary-color);
 }
 
@@ -331,13 +330,14 @@ a {
 }
 
 .salad-items-container {
-    width: 90%;
+    width: 80%;
 }
 
 .salad-item {
     border-bottom: 1px solid var(--secondary-color);
-    height: 60px;
+    /* height: 50px; */
     margin: 20px 0;
+    padding-bottom: 0.5rem;
 }
 
 .salad-pricing {
@@ -348,7 +348,6 @@ a {
 }
 
 .salad-item-ingredients p {
-    margin: 0 10px;
     font-size: 0.8rem;
 }
 
@@ -356,7 +355,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:50%;
+    width:100%;
     background-color: var(--primary-color);
 }
 
@@ -377,12 +376,12 @@ a {
 }
 
 .appetizer-items-container {
-    width: 90%;
+    width: 80%;
 }
 
 .appetizer-item {
     border-bottom: 1px solid var(--secondary-color);
-    height: 60px;
+    height: 50px;
     margin: 20px 0;
 }
 
@@ -394,22 +393,21 @@ a {
 }
 
 .appetizer-item-ingredients p {
-    margin: 0 10px;
     font-size: 0.8rem;
 }
 
 
-.appetizer-container {
+/* .appetizer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width:50%;
     background-color: var(--primary-color);
-}
+} */
 
 .other-items-container-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -427,7 +425,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:50%;
+    width: 100%;
     background-color: var(--primary-color);
 }
 
@@ -437,25 +435,25 @@ a {
 }
 
 .sandwich-items-container {
-    width: 90%;
+    width: 80%;
 }
 
 .sandwich-item {
     border-bottom: 1px solid var(--secondary-color);
-    height: 60px;
-    margin: 20px 0;
+    /* height: 50px; */
+    margin: 20px 0px;
+    padding-bottom: 0.5rem;
 }
 
 .sandwich-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .sandwich-item-ingredients p {
-    margin: 0 10px;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
 .other-items-container-2 {
@@ -466,7 +464,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:50%;
+    width: 100%;
     background-color: #053114;
     color: var(--primary-color);
 }
@@ -490,25 +488,25 @@ a {
 }
 
 .kids-items-container {
-    width: 90%;
+    width: 80%;
 }
 
 .kids-item {
-    border-bottom: 1px solid var(--secondary-color);
-    height: 60px;
+    border-bottom: 1px solid var(--primary-color);
     margin: 20px 0;
+    padding-bottom: 0.5rem;
 }
 
 .kids-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .kids-item-ingredients p {
-    margin: 0 10px;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    max-width: 70%;
 }
 
 .specials-container {
@@ -519,7 +517,7 @@ a {
 .specials-container-header {
     display: flex;
     align-items: center;
-    font-size: 5rem;
+    font-size: 3rem;
     height: 150px;
 }
 
@@ -865,6 +863,64 @@ a {
         margin-left: 1rem;
     }
 
+    .pizza-menu-header p:nth-of-type(3) {
+        max-width: 60%;
+        font-size: 0.6rem;
+    }
+
+    .menu-item {
+        width: 90%;
+        height: 60px;
+        margin: 20px;
+    }
+    
+    .type-price-div p {
+        font-size: 1.5rem;
+    }
+    
+    .size-pricing {
+        font-size: 1.5rem;
+    }
+
+    
+    .pizza-item-ingredients {
+        font-size: 0.8rem;
+    }
+
+
+
+    .appetizer-item {
+        height: 60px;
+    }
+
+    .salad-item {
+        /* height: 60px; */
+    }
+
+    .sandwich-item {
+        /* height: 60px; */
+    }
+
+    .sandwich-pricing {
+        font-size: 1.4rem;
+    }
+
+    .sandwich-item-ingredients p {
+        font-size: 0.8rem;
+    }
+
+    .kids-item {
+        /* height: 60px; */
+    }
+
+    .kids-pricing {
+        font-size: 1.4rem;
+    }
+
+    .kids-item-ingredients p {
+        font-size: 0.8rem;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -894,6 +950,40 @@ a {
 
     .pizza-menu-items {
         width: 70%;
+    }
+
+    .pizza-menu-header p:nth-of-type(3) {
+        max-width: 55%;
+        font-size: 0.7rem;
+    }
+
+    .other-items-container {
+        flex-direction: row;
+    }
+
+    .appetizer-container {
+        width: 50%;
+    }
+
+    .salad-container {
+        width: 50%;   
+    }
+
+    .other-items-container-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sandwich-container {
+        width:50%;    
+    }
+
+    .kids-container {
+        width:50%;
+    }
+
+    .specials-container-header {   
+        font-size: 5rem; 
     }
 }
 

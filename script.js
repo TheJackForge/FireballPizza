@@ -196,9 +196,7 @@ const kidsOptions = [
     },
 ]
 
-// let scroll = window.scrollY;
-// const headerLogo = document.getElementById('header-logo');
-// const headerHeight = headerLogo.offsetHeight;
+// FLOATING NAV BAR
 
 const navList = document.getElementById('nav-list');
 const navListHeight = navList.offsetHeight;
@@ -206,10 +204,12 @@ console.log(navListHeight);
 
 window.addEventListener('scroll', () => {
         floatingNavBar.classList.add('active');
-        if (window.scrollY <= 400) {
+        if (window.scrollY <= navListHeight) {
             floatingNavBar.classList.remove('active');
         }
 })
+
+// POPULATE MENU ELEMENTS
 
 function populateMenu() {
     pizzaOptions.forEach( (pizza) => {

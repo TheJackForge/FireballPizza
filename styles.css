@@ -606,7 +606,6 @@ a {
     flex-direction: column;
     align-items: center;
     padding-top: 4rem;
-    /* justify-content: center; */
     width: 50%;
     height: 300px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-01-date-night.jpg');
@@ -676,10 +675,16 @@ a {
     cursor: pointer;
     margin: 5px;
     border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
 }
 
 .reservations-takeout-btn:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,1);
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.reservations-takeout-btn:active {
+    transform: scale(0.995);
 }
 
 .uber-eats-btn {
@@ -693,10 +698,16 @@ a {
     cursor: pointer;
     margin: 5px;
     border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
 }
 
 .uber-eats-btn:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,1);
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.uber-eats-btn:active {
+    transform: scale(0.995);
 }
 
 .skip-the-dishes-btn {
@@ -710,10 +721,16 @@ a {
     cursor: pointer;
     margin: 5px;
     border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
 }
 
 .skip-the-dishes-btn:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,1);
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.skip-the-dishes-btn:active {
+    transform: scale(0.995);
 }
 
 .doordash-btn {
@@ -728,10 +745,15 @@ a {
     margin: 5px;
     border-radius: 20px;
     transition: box-shadow .3s;
+    outline: none;
 }
 
 .doordash-btn:hover {
-    box-shadow: 0 0 6px rgba(20,20,20,0.8);
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.doordash-btn:active {
+    transform: scale(0.995);
 }
 
 .fireball-pizza-information {
@@ -747,6 +769,7 @@ a {
 
 .fireball-pizza-hours {
     width: 100%;
+    text-align: center;
 }
 
 .fireball-pizza-hours-header {
@@ -754,7 +777,7 @@ a {
     justify-content: center;
     margin-top: 30px;
     color: var(--primary-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding-bottom: 1rem;
 }
@@ -763,6 +786,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: var(--primary-color);
     font-size: 0.8rem;
     text-align: left;
@@ -773,25 +797,26 @@ a {
 }
 
 .fireball-pizza-address {
-    width: 40%;
-    margin-left: 1rem;
+    width: 90%;
+    text-align: center;
 }
 
 .fireball-pizza-address-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
     color: var(--primary-color);
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding-bottom: 1rem;
 }
 
 .fireball-pizza-address-content {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    text-align: left;
     color: var(--primary-color);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .fireball-pizza-address-content p {
@@ -808,23 +833,25 @@ a {
 }
 
 .fireball-pizza-contact {
-    width: 35%;
+    width: 90%;
+    text-align: center;
 }
 
 .fireball-pizza-contact-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
     color: var(--primary-color);
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding-bottom: 1rem;
 }
 
 .fireball-pizza-contact-content {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.6rem;
+    display: inline-block;
+    text-align: left;
+    font-size: 0.8rem;
     color: var(--primary-color);
 }
 
@@ -851,6 +878,31 @@ a {
     .story-section-2 {
         width: 70%;      
     }
+    
+    .fireball-pizza-hours-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-hours-content {
+        font-size: 1rem;
+    }
+
+    .fireball-pizza-address-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-address-content {
+        font-size: 1rem;
+    }
+
+    .fireball-pizza-contact-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-contact-content {
+        font-size: 1rem;
+    }
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1014,54 +1066,42 @@ a {
     }
     
     .fireball-pizza-hours {
-        width: 20%;
+        width: 28%;
+        text-align: left;
     }
-    
+
     .fireball-pizza-hours-header {
-        display: flex;
-        align-items: center;
         justify-content: flex-start;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-    
-    .fireball-pizza-hours-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 300px;
-        color: var(--primary-color);
         font-size: 1rem;
     }
     
-    .fireball-pizza-hours-content p {
-        font-weight: 400;
+    .fireball-pizza-hours-content {
+        display: inline-block;
+        font-size: 0.3rem;
+    }
+    
+    .fireball-pizza-hours-header {
+        font-size: 1rem;
+    }
+    
+    .fireball-pizza-hours-content {
+        font-size: 0.7rem;
     }
     
     .fireball-pizza-address {
-        width: 20%;
+        width: 28%;
+        text-align: left;
         margin-left: 3rem;
     }
     
     .fireball-pizza-address-header {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
-        font-size: 1.4rem;
-        font-weight: 700;
+        justify-content: flex-start;
+        font-size: 1rem;
     }
     
     .fireball-pizza-address-content {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        color: var(--primary-color);
-        font-size: 1rem;
+        display: inline-block;
+        font-size: 0.7rem;
     }
     
     .fireball-pizza-address-content p {
@@ -1078,25 +1118,18 @@ a {
     }
     
     .fireball-pizza-contact {
-        width: 20%;
+        width: 28%;
+        text-align: left;
+        margin-left: 3rem;
     }
     
     .fireball-pizza-contact-header {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
-        font-size: 1.4rem;
-        font-weight: 700;
+        justify-content: flex-start;
+        font-size: 1rem;
     }
     
     .fireball-pizza-contact-content {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        color: var(--primary-color);
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     
     .fireball-pizza-contact-content p {
@@ -1312,98 +1345,41 @@ a {
         width: 70%;
     }
 
-    .fireball-pizza-information {
-        display: flex;
-        justify-content: flex-start;
-        height: 400px;
-        width: 100%;
-        background-color: var(--secondary-color);
-        padding-left: 4rem;
-    }
-    
     .fireball-pizza-hours {
         width: 25%;
     }
     
     .fireball-pizza-hours-header {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
         font-size: 1.4rem;
-        font-weight: 700;
-    }
+    } 
     
     .fireball-pizza-hours-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 300px;
-        color: var(--primary-color);
-        font-size: 1rem;
-    }
-    
-    .fireball-pizza-hours-content p {
-        font-weight: 400;
+        font-size: 0.8rem;
     }
     
     .fireball-pizza-address {
-        width: 25%;
+        width: 20%;
     }
     
     .fireball-pizza-address-header {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
         font-size: 1.4rem;
-        font-weight: 700;
     }
     
     .fireball-pizza-address-content {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        color: var(--primary-color);
-        font-size: 1rem;
-    }
-    
-    .fireball-pizza-address-content p {
-        font-weight: 400;
-    }
-    
-    .fireball-pizza-address-content p:nth-of-type(1) {
-        font-weight: 600;
-    }
-    
-    .fireball-pizza-address-content p:nth-of-type(4) {
-        margin-top: 2rem;
-        font-weight: 600;
+
+        font-size: 0.8rem;
     }
     
     .fireball-pizza-contact {
-        width: 25%;
+        width: 20%;
     }
     
     .fireball-pizza-contact-header {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
         font-size: 1.4rem;
-        font-weight: 700;
     }
     
     .fireball-pizza-contact-content {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        color: var(--primary-color);
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .fireball-pizza-contact-content p {
@@ -1424,7 +1400,7 @@ a {
     
     .contact-email-sizing {
         font-size: 0.9rem;
-    }
+    } */
     
 }
 
@@ -1480,84 +1456,35 @@ a {
     .doordash-btn {
         width: 50%;
     }
-
-    .fireball-pizza-information {
-        display: flex;
-        justify-content: flex-start;
-        height: 400px;
-        width: 100%;
-        background-color: var(--secondary-color);
-        padding-left: 4rem;
-    }
     
     .fireball-pizza-hours {
-        width: 25%;
+        width: 20%;
     }
     
     .fireball-pizza-hours-header {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
         font-size: 1.4rem;
-        font-weight: 700;
     }
     
     .fireball-pizza-hours-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 300px;
-        color: var(--primary-color);
         font-size: 1rem;
-    }
-    
-    .fireball-pizza-hours-content p {
-        font-weight: 400;
-    }
+    } */
     
     .fireball-pizza-address {
-        width: 25%;
+        width: 20%;
     }
     
     .fireball-pizza-address-header {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
         font-size: 1.4rem;
-        font-weight: 700;
     }
     
     .fireball-pizza-address-content {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        color: var(--primary-color);
         font-size: 1rem;
     }
-    
-    .fireball-pizza-address-content p {
-        font-weight: 400;
-    }
-    
-    .fireball-pizza-address-content p:nth-of-type(1) {
-        font-weight: 600;
-    }
-    
-    .fireball-pizza-address-content p:nth-of-type(4) {
-        margin-top: 2rem;
-        font-weight: 600;
-    }
-    
     .fireball-pizza-contact {
-        width: 25%;
-    }
+        width: 20%;
+    } 
     
-    .fireball-pizza-contact-header {
+    /* .fireball-pizza-contact-header {
         display: flex;
         align-items: center;
         height: 80px;
@@ -1593,6 +1520,6 @@ a {
     
     .contact-email-sizing {
         font-size: 0.9rem;
-    }
+    } */
 
 }

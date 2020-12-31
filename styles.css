@@ -186,8 +186,7 @@ a {
     align-items: center;
     justify-content: center;
     color: var(--secondary-color);
-    /* font-size: 1.2rem; */
-    margin: 30px;
+    margin: 3rem;
 }
 
 .pizza-menu-header p {
@@ -213,9 +212,9 @@ a {
 
 .menu-item-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 4rem;
 }
 
@@ -274,6 +273,7 @@ a {
     align-items: center;
     width: 100%;
     background-color: var(--primary-color);
+    padding-bottom: 2rem;
 }
 
 .salad-image-header {
@@ -320,6 +320,7 @@ a {
     align-items: center;
     width:100%;
     background-color: var(--primary-color);
+    padding-bottom: 2rem;
 }
 
 .appetizer-image-header {
@@ -382,6 +383,7 @@ a {
     align-items: center;
     width: 100%;
     background-color: var(--primary-color);
+    padding: 2rem 0 2rem 0;
 }
 
 .sandwich-menu-header p:nth-of-type(1) {
@@ -422,6 +424,7 @@ a {
     width: 100%;
     background-color: #053114;
     color: var(--primary-color);
+    padding: 2rem 0 2rem 0;
 }
 
 .kids-menu-header {
@@ -575,7 +578,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     padding-top: 4rem;
     width: 50%;
     height: 300px;
@@ -649,7 +651,7 @@ a {
     align-items: center;
     background-color: var(--primary-color);
     font-size: 3rem;
-    padding: 1rem 0 2rem 0;
+    padding: 3rem 0 5rem 0;
 }
 
 .fireball-pizza-takeout-delivery-container p {
@@ -1400,8 +1402,7 @@ a {
     
     .contact-email-sizing {
         font-size: 0.9rem;
-    } */
-    
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1483,43 +1484,4 @@ a {
     .fireball-pizza-contact {
         width: 20%;
     } 
-    
-    /* .fireball-pizza-contact-header {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        margin-top: 30px;
-        color: var(--primary-color);
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-    
-    .fireball-pizza-contact-content {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        color: var(--primary-color);
-        font-size: 1rem;
-    }
-    
-    .fireball-pizza-contact-content p {
-        font-weight: 400;
-    }
-    
-    .fireball-pizza-contact-content p:nth-of-type(2) {
-        margin-top: 1rem;
-    }
-    
-    .fireball-pizza-contact-content p:nth-of-type(3) {
-        margin-top: 1rem;
-    }
-    
-    .contact-bold {
-        font-weight: 600;
-    }
-    
-    .contact-email-sizing {
-        font-size: 0.9rem;
-    } */
-
 }

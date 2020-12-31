@@ -185,8 +185,7 @@ const kidsOptions = [
 // FLOATING NAV BAR
 
 const navList = document.getElementById('nav-list');
-const navListHeight = navList.offsetHeight;
-console.log(navListHeight);
+const navListHeight = (navList.offsetHeight - 5);
 
 window.addEventListener('scroll', () => {
         floatingNavBar.classList.add('active');

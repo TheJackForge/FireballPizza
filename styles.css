@@ -645,8 +645,93 @@ a {
 }
 
 .fireball-pizza-takeout-delivery-container {
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--primary-color);
+    font-size: 3rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.fireball-pizza-takeout-delivery-container p {
+    margin-bottom: 0.5rem;
+}
+
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.reservations-takeout-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.reservations-takeout-btn:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,1);
+}
+
+.uber-eats-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: #3FC060;
+    background-color: #162328;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.uber-eats-btn:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,1);
+}
+
+.skip-the-dishes-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: #F36D00;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.skip-the-dishes-btn:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,1);
+}
+
+.doordash-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: #FF3008;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+}
+
+.doordash-btn:hover {
+    box-shadow: 0 0 6px rgba(20,20,20,0.8);
 }
 
 .fireball-pizza-information {
@@ -745,14 +830,6 @@ a {
 
 .fireball-pizza-contact-content p {
     font-weight: 400;
-}
-
-.fireball-pizza-contact-content p:nth-of-type(2) {
-    
-}
-
-.fireball-pizza-contact-content p:nth-of-type(3) {
-    
 }
 
 .contact-bold {
@@ -1219,9 +1296,20 @@ a {
         margin: 0 2rem;
     }
 
-    .fireball-pizza-takeout-delivery-container {
-        height: 400px;
-        background-color: var(--primary-color);
+    .reservations-takeout-btn {
+        width: 70%;
+    }
+    
+    .uber-eats-btn {
+        width: 70%;
+    }
+    
+    .skip-the-dishes-btn {
+        width: 70%;
+    }
+    
+    .doordash-btn {
+        width: 70%;
     }
 
     .fireball-pizza-information {
@@ -1375,6 +1463,22 @@ a {
 
     .pizza-menu-items {
         width: 60%;
+    }
+
+    .reservations-takeout-btn {
+        width: 50%;
+    }
+    
+    .uber-eats-btn {
+        width: 50%;
+    }
+    
+    .skip-the-dishes-btn {
+        width: 50%;
+    }
+    
+    .doordash-btn {
+        width: 50%;
     }
 
     .fireball-pizza-information {

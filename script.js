@@ -12,70 +12,56 @@ const pizzaOptions = [
         smallPrice: 11,
         mediumPrice: 14,
         largePrice: 18,
-        toppings: 'fresh mozzarella, parmesan, ricotta'
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Pepperoni',
         smallPrice: 12,
         mediumPrice: 15,
         largePrice: 19,
-        toppings: 'plenty of \'roni, cheese'
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Hawaiian',
         smallPrice: 12,
         mediumPrice: 15,
         largePrice: 19,
-        toppings: 'ham, pineapple, note: pineapple does belong on pizza'
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Deluxe',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions'
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Veggie',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'all the vegetables even the gross ones',
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
     {
         type: 'BBQ Chicken',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'chicken, our homestyle bbq sauce, onions, made by a chef wearing New Balance sneakers',
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
     {
         type: 'Meat Explosion',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, ham, meat you didn\'t even know existed, meat',
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
     {
         type: 'Donair',
         smallPrice: 14,
         mediumPrice: 19,
         largePrice: 23,
-        toppings: 'donair meat, sweet sauce, our chef will say "yes boss" as he sends it out to you',
-    },
-    {
-        type: 'Donair',
-        smallPrice: 14,
-        mediumPrice: 19,
-        largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
-    },
-    {
-        type: 'Donair',
-        smallPrice: 14,
-        mediumPrice: 19,
-        largePrice: 23,
-        toppings: 'pepperoni, Italian sausage, fresh green peppers, mushrooms, onions',
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
 ]
 
@@ -83,27 +69,27 @@ const saladOptions = [
     {
         type: 'House Salad',
         price: 5,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chicken Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chef\'s Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
 ]
 
@@ -111,27 +97,27 @@ const appetizerOptions = [
     {
         type: 'House Salad',
         price: 5,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chicken Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chef\'s Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
 ]
 
@@ -139,27 +125,27 @@ const sandwichOptions = [
     {
         type: 'House Salad',
         price: 5,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chicken Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chef\'s Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'leuismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Caesar Salad',
         price: 7,
-        ingredients: 'lettuce, tomatoes, cucumbers, house dressing'
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
 ]
 

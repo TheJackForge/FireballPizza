@@ -9,7 +9,7 @@ const floatingNavBar = document.getElementById('floating-nav-bar');
 const pizzaOptions = [
     {
         type: '3-Cheese Pizza',
-        smallPrice: 11,
+        smallPrice: 10,
         mediumPrice: 14,
         largePrice: 18,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
@@ -17,50 +17,50 @@ const pizzaOptions = [
     {
         type: 'Pepperoni',
         smallPrice: 12,
-        mediumPrice: 15,
-        largePrice: 19,
+        mediumPrice: 16,
+        largePrice: 20,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Hawaiian',
-        smallPrice: 12,
-        mediumPrice: 15,
-        largePrice: 19,
+        smallPrice: 13,
+        mediumPrice: 17,
+        largePrice: 21,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Deluxe',
-        smallPrice: 14,
+        smallPrice: 15,
         mediumPrice: 19,
         largePrice: 23,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget'
     },
     {
         type: 'Veggie',
-        smallPrice: 14,
-        mediumPrice: 19,
-        largePrice: 23,
+        smallPrice: 13,
+        mediumPrice: 17,
+        largePrice: 21,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
     {
         type: 'BBQ Chicken',
-        smallPrice: 14,
-        mediumPrice: 19,
-        largePrice: 23,
-        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
-    },
-    {
-        type: 'Meat Explosion',
-        smallPrice: 14,
-        mediumPrice: 19,
-        largePrice: 23,
+        smallPrice: 16,
+        mediumPrice: 20,
+        largePrice: 24,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
     {
         type: 'Donair',
-        smallPrice: 14,
-        mediumPrice: 19,
-        largePrice: 23,
+        smallPrice: 16,
+        mediumPrice: 20,
+        largePrice: 24,
+        toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
+    },
+    {
+        type: 'Meat Explosion',
+        smallPrice: 18,
+        mediumPrice: 22,
+        largePrice: 26,
         toppings: 'risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget',
     },
 ]
@@ -134,42 +134,42 @@ const appetizerOptions = [
 const sandwichOptions = [
     {
         type: 'Classic Fireball Burger',
-        price: 5,
+        price: 10,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Double Classic with Cheese',
-        price: 5,
+        price: 12,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Smoked Bacon Burger',
-        price: 7,
+        price: 12,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'The Pizza Burger',
-        price: 7,
+        price: 13,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Grilled Cheese',
-        price: 7,
+        price: 9,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'The Fireball BLT',
-        price: 7,
+        price: 10,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Chicken and Waffle Sandwich',
-        price: 7,
+        price: 11,
         ingredients: 'leuismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
         type: 'Southwest Quesadilla',
-        price: 7,
+        price: 11,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
 

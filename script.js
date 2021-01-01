@@ -133,30 +133,46 @@ const appetizerOptions = [
 
 const sandwichOptions = [
     {
-        type: 'House Salad',
+        type: 'Classic Fireball Burger',
         price: 5,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Caesar Salad',
+        type: 'Double Classic with Cheese',
+        price: 5,
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
+    },
+    {
+        type: 'Smoked Bacon Burger',
         price: 7,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Chicken Caesar Salad',
+        type: 'The Pizza Burger',
         price: 7,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Chef\'s Salad',
+        type: 'Grilled Cheese',
+        price: 7,
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
+    },
+    {
+        type: 'The Fireball BLT',
+        price: 7,
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
+    },
+    {
+        type: 'Chicken and Waffle Sandwich',
         price: 7,
         ingredients: 'leuismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Caesar Salad',
+        type: 'Southwest Quesadilla',
         price: 7,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
+
 ]
 
 const kidsOptions = [
@@ -166,12 +182,12 @@ const kidsOptions = [
         ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
-        type: 'Dinosaur Pepperoni Pizza',
-        price: 6,
+        type: 'Macaroni and Cheese',
+        price: 5,
         ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
-        type: 'Chicken Nuggets',
+        type: 'Fireball Pepperoni Pizza',
         price: 6,
         ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
@@ -181,13 +197,18 @@ const kidsOptions = [
         ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
-        type: 'The Kid\'s Salad',
-        price: 6,
+        type: 'Double Slider Burgers',
+        price: 7,
         ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
     {
-        type: 'Steak Dinner',
-        price: 28,
+        type: 'Chicken Nuggets',
+        price: 7,
+        ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
+    },
+    {
+        type: 'Kid\'s Chicken Quesadilla',
+        price: 7,
         ingredients: 'vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit'
     },
 ]
@@ -264,7 +285,7 @@ function populateAppetizerMenu() {
 }
 
 function populateSandwichMenu() {
-    appetizerOptions.forEach((sandwich) => {
+    sandwichOptions.forEach((sandwich) => {
         let sandwichItem = document.createElement('div');
         sandwichItem.classList.add('sandwich-item');
         sandwichItem.innerHTML = `

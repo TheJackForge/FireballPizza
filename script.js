@@ -82,12 +82,17 @@ const saladOptions = [
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Chef\'s Salad',
+        type: 'Waldorf Salad',
         price: 7,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Caesar Salad',
+        type: 'Taco Salad',
+        price: 7,
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
+    },
+    {
+        type: 'Chef\'s Salad',
         price: 7,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
@@ -95,28 +100,33 @@ const saladOptions = [
 
 const appetizerOptions = [
     {
-        type: 'House Salad',
-        price: 5,
+        type: 'Avacado Toast',
+        price: 6,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Caesar Salad',
-        price: 7,
+        type: 'Mozzarella Sticks',
+        price: 6,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Chicken Caesar Salad',
-        price: 7,
+        type: 'Onion Ring Stacker',
+        price: 8,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Chef\'s Salad',
-        price: 7,
+        type: 'Chicken Wings',
+        price: 10,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
     {
-        type: 'Caesar Salad',
-        price: 7,
+        type: 'Chicken Fingers',
+        price: 10,
+        ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
+    },
+    {
+        type: 'Nachos',
+        price: 11,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
 ]
@@ -185,7 +195,7 @@ const kidsOptions = [
 // FLOATING NAV BAR
 
 const navList = document.getElementById('nav-list');
-const navListHeight = (navList.offsetHeight - 5);
+const navListHeight = (navList.offsetHeight);
 
 window.addEventListener('scroll', () => {
         floatingNavBar.classList.add('active');

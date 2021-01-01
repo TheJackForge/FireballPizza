@@ -8,15 +8,25 @@
     <title>Restaurant Template</title>
 </head>
 <body>
+    <nav class="mobile-home-nav">
+        <ul class="mobile-home-nav-list">
+            <a href="#menu-navigation"><li>PIZZA</li></a>
+            <a href="#appetizers-navigation"><li>APPETIZERS</li></a>
+            <a href="#sandwiches-navigation"><li>SANDWICHES</li></a>
+            <a href="#specials-navigation"><li>SPECIALS</li></a>
+            <a href="#order-navigation"><li>ORDER</li> </a>             
+        </ul>
+    </nav>
     <header id="nav-list" class="header">
+
         <nav>
             <ul class="nav-list">
-                <a href="#welcome"><li>WELCOME</li></a>
-                <a href="#menu"><li>PIZZA</li></a>
-                <a href="#appetizers"><li>APPETIZERS</li></a>
-                <a href="#sandwiches"><li>SANDWICHES</li></a>
-                <a href="#specials"><li>SPECIALS</li></a>
-                <a href="#order"><li>ORDER</li> </a>             
+                <a href="#welcome-navigation"><li>WELCOME</li></a>
+                <a href="#menu-navigation"><li>PIZZA</li></a>
+                <a href="#appetizers-navigation"><li>APPETIZERS</li></a>
+                <a href="#sandwiches-navigation"><li>SANDWICHES</li></a>
+                <a href="#specials-navigation"><li>SPECIALS</li></a>
+                <a href="#order-navigation"><li>ORDER</li> </a>             
             </ul>
         </nav>
         <div class="header-logo"><h1>FIREBALL PIZZA</h1></div>
@@ -25,26 +35,26 @@
     <nav>
         <ul class="floating-nav-list">
             <a href="#"><li>HOME</li></a>
-            <a href="#welcome"><li>WELCOME</li></a>
-            <a href="#menu"><li>PIZZA</li></a>
-            <a href="#appetizers"><li>APPETIZERS</li></a>
-            <a href="#sandwiches"><li>SANDWICHES</li></a>
-            <a href="#specials"><li>SPECIALS</li></a>
-            <a href="#order"><li>ORDER</li></a>              
+            <a href="#welcome-navigation" class="welcome-nav"><li>WELCOME</li></a>
+            <a href="#menu-navigation"><li>PIZZA</li></a>
+            <a href="#appetizers-navigation"><li>APPETIZERS</li></a>
+            <a href="#sandwiches-navigation"><li>SANDWICHES</li></a>
+            <a href="#specials-navigation"><li>SPECIALS</li></a>
+            <a href="#order-navigation"><li>ORDER</li></a>              
         </ul>
     </nav>
     </div>
     <div class="main-content">
-        <a name="welcome"></a>
-        <div class="information-section">
+        <div class="information-section"  id="welcome-navigation">
             <div class="story-section"><p>Pizza made fresh and with the highest quality ingredients.</p></div>
             <div class="story-section-2">
                 <p>Fireball Pizza has been serving the Los Angeles area for over 20 years, and in that time we have come to create some wonderful connections with our customers. We care about you and that's why we go the extra mile to ensure that we are sourcing the best meat and produce available.</p>
             </div>
         </div>
-        <div class="showcase-container-1"></div>
-        <!-- <div class="divider-space-2"></div> -->
-        <a name="menu"></a>
+        <div class="showcase-container-1">
+            <div class="nav-divider"></div>
+            <div id="menu-navigation"></div>
+        </div>
         <div class="menu-container">
             <div class="pizza-menu">
                 <div class="pizza-menu-image"></div>
@@ -62,7 +72,10 @@
         </div>
         <div class="other-items-container">
             <div class="appetizer-container">
-                <div class="appetizer-image-header"></div>
+                <div class="appetizer-image-header">
+                    <div class="nav-divider"></div>
+                    <div id="appetizers-navigation"></div>
+                </div>
                 <div class="appetizer-menu-header">
                     <p>APPETIZERS</p>
                 </div>
@@ -73,7 +86,6 @@
             <div class="salad-container">
                 <div class="salad-image-header"></div>
                 <div class="salad-menu-header">
-                    <a name="appetizers"></a>
                     <p>SALADS</p>
                 </div>
                 <div id="salad-items-container" class="salad-items-container">
@@ -81,11 +93,13 @@
                 </div>
             </div>
         </div>
-        <div class="sandwich-image-header"></div>
+        <div class="sandwich-image-header">
+            <div class="nav-divider"></div>
+            <div id="sandwiches-navigation"></div>
+        </div>
         <div class="other-items-container-2">
             
             <div class="sandwich-container">
-                <a name="sandwiches"></a>
                 <div class="sandwich-menu-header">
                     <p>BURGERS AND SANDWICHES</p>
                 </div>
@@ -101,9 +115,9 @@
                 <div id="kids-items-container" class="kids-items-container">
                     <!-- POPULATED BY JS -->
                 </div>
-            </div>
+                    <div id="specials-navigation"></div>  
+            </div>   
         </div>
-        <a name="specials"></a>
         <div class="specials-container"> 
             <div class="specials-container-header">
                 <p>SPECIALS</p>
@@ -134,10 +148,10 @@
                     <div class="divider-line"></div>
                     <p>DATE NIGHT</p>
                     <p>HALF PRICE DRINKS WITH THE PURCHASE OF 2 REGULAR PRICED MEALS</p>
+                    <div id="order-navigation"></div> 
                 </div>
             </div>
         </div>
-        <a name="order"></a>
         <div class="fireball-pizza-takeout-delivery-container">
             <p>ORDER NOW</p>
             <div class="delivery-container">

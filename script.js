@@ -100,7 +100,7 @@ const saladOptions = [
 
 const appetizerOptions = [
     {
-        type: 'Avacado Toast',
+        type: 'Avocado Toast',
         price: 6,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
@@ -222,6 +222,8 @@ window.addEventListener('scroll', () => {
         floatingNavBar.classList.add('active');
         if (window.scrollY <= navListHeight) {
             floatingNavBar.classList.remove('active');
+        } else {
+            floatingNavBar.classList.add('active');
         }
 })
 
@@ -251,7 +253,7 @@ function populateSaladMenu() {
         let saladItem = document.createElement('div');
         saladItem.classList.add('salad-item');
         saladItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="salad-type-price-div">
             <p>${salad.type}</p>
             <div class="salad-pricing">
             <span>${salad.price}</span>
@@ -270,7 +272,7 @@ function populateAppetizerMenu() {
         let appetizerItem = document.createElement('div');
         appetizerItem.classList.add('appetizer-item');
         appetizerItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="appetizer-type-price-div">
             <p>${appetizer.type}</p>
             <div class="appetizer-pricing">
             <span>${appetizer.price}</span>
@@ -289,7 +291,7 @@ function populateSandwichMenu() {
         let sandwichItem = document.createElement('div');
         sandwichItem.classList.add('sandwich-item');
         sandwichItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="sandwich-type-price-div">
             <p>${sandwich.type}</p>
             <div class="sandwich-pricing">
             <span>${sandwich.price}</span>
@@ -308,7 +310,7 @@ function populateKidsMenu() {
         let kidsItem = document.createElement('div');
         kidsItem.classList.add('kids-item');
         kidsItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="kids-type-price-div">
             <p>${kids.type}</p>
             <div class="kids-pricing">
             <span>${kids.price}</span>

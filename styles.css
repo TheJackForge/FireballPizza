@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -71,7 +71,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 100px;
 }
 
 .mobile-home-nav-list {
@@ -83,10 +83,10 @@ a {
 }
 
 .mobile-home-nav-list a {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     color: var(--secondary-color);
-    padding: 0 10px;
-    font-weight: 600;
+    padding: 20px 6px;
+    font-weight: 700;
 }
 
 .mobile-home-nav-list a:last-child {
@@ -99,13 +99,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 70px;
     width: 100%;
     border-bottom: 1px solid #383838;
     z-index: -1;
     top: 0;
     opacity: 0;
-    transition: 0.3s ease;
 }
 
 .floating-nav-bar.active { 
@@ -115,7 +114,7 @@ a {
 
 .floating-nav-bar li {
     color: var(--secondary-color);
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .floating-nav-list {
@@ -128,9 +127,8 @@ a {
 }
 
 .floating-nav-list a {
-    padding: 0 10px;
-    font-weight: 600;
-    transition: background-color 1s ease;
+    padding: 20px 5px;
+    font-weight: 700;
 }
 
 .floating-nav-list a:last-child {
@@ -139,7 +137,7 @@ a {
 
 .floating-nav-list a:hover {
     background-color: rgb(148, 148, 148);
-    padding: 0 10px;
+    padding: 20px 5px;
     color: white;
 }
 
@@ -164,6 +162,7 @@ a {
     font-size: 2.5rem;
     margin: 0;
     font-weight: 300;
+    text-align: center;
 }
 
 .main-content {
@@ -178,39 +177,42 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    padding: 4rem 0;
 }
 
 .story-section {
     width: 80%;
     color:  #1a1a1a;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-family: 'Montserrat';
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .story-section-2 {
     width: 80%;
     color: rgb(37, 37, 37);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: sans-serif;
     color:  #1a1a1a;
-    font-weight: 300;
+    font-weight: 500;
     font-family: inherit;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 .showcase-container-1 {
     width: 100%;
     height: 300px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/showcase-photo-4-pizza.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/showcase-photo-4-pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 70%;
 }
 
 .nav-divider {
-    height: 90%;
+    height: 60%;
 }
 
 .menu-container {
@@ -231,13 +233,13 @@ a {
 .pizza-menu-image {
     display: none;
     width: 40%;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-2-pizza.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-2-pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .pizza-menu-items {
-    width: 95%;
+    width: 100%;
 }
 
 .pizza-menu-header {
@@ -246,7 +248,7 @@ a {
     align-items: center;
     justify-content: center;
     color: var(--secondary-color);
-    margin: 3rem;
+    margin: 1.5rem;
 }
 
 .pizza-menu-header p {
@@ -254,20 +256,25 @@ a {
 }
 
 .pizza-menu-header p:nth-of-type(1) {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
 }
 
 .pizza-menu-header p:nth-of-type(2) {
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .pizza-menu-header p:nth-of-type(3) {
     margin-top: 1rem;
-    line-height: 2;
-    max-width: 90%;
+    line-height: 1.5;
+    max-width: 95%;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .menu-item-container {
@@ -288,23 +295,26 @@ a {
 .type-price-div {
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
 }
 
 .type-price-div p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .size-pricing {
     display: flex;
     justify-content: space-around;
-    width: 30%;
-    font-size: 1rem;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .pizza-item-ingredients {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
+    padding-top: 10px;
 }
 
 .divider-space-2 {
@@ -340,7 +350,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-salad-004.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-salad-004.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -348,12 +358,14 @@ a {
 }
 
 .salad-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
+    font-weight: 600;
+    text-align: center;
 }
 
 .salad-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .salad-item {
@@ -362,16 +374,28 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.salad-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.salad-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .salad-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .salad-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
 }
 
 .appetizer-container {
@@ -387,7 +411,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-appetizers-001.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-appetizers-001.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 50%;
@@ -395,12 +419,14 @@ a {
 }
 
 .appetizer-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
     margin: 1rem 0;
+    text-align: center;
 }
 
 .appetizer-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .appetizer-item {
@@ -409,16 +435,28 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.appetizer-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appetizer-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .appetizer-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .appetizer-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
 }
 
 .other-items-container-2 {
@@ -431,7 +469,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-burgers-sandwiches-001.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-burgers-sandwiches-001.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 50%;
@@ -447,12 +485,14 @@ a {
 }
 
 .sandwich-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
     margin: 1rem 0;
+    font-weight: 600;
 }
 
 .sandwich-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .sandwich-item {
@@ -461,16 +501,28 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.sandwich-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sandwich-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .sandwich-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .sandwich-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
 }
 
 .other-items-container-2 {
@@ -494,19 +546,20 @@ a {
 }
 
 .kids-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1rem;
+    font-weight: 500;
 }
 
 .kids-menu-header p:nth-of-type(2) {
     text-align: center;
     line-height: 2;
-    max-width: 60%;
-    font-size: 0.6rem;
+    max-width: 80%;
+    font-size: 0.8rem;
 }
 
 .kids-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .kids-item {
@@ -515,15 +568,26 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.kids-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kids-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .kids-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .kids-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
 }
 
@@ -535,14 +599,15 @@ a {
 .specials-container-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 3rem;
     height: 150px;
     width: 100%;
+    font-weight: 600;
 }
 
 .specials-container-header p {
     color: var(--primary-color);
-    margin-left: 2rem;
 }
 
 
@@ -559,8 +624,8 @@ a {
     align-items: center;
     padding-top: 1.3rem;
     width: 50%;
-    height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-2-for-1.jpg');
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-2-for-1.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -569,21 +634,22 @@ a {
 .special-1-container p {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 90%;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-1-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-1-container p:nth-of-type(2) {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-1-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -594,8 +660,8 @@ a {
     align-items: center;
     padding-top: 1.3rem;
     width: 50%;
-    height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-02-drinks.jpg');
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-02-drinks.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -604,45 +670,49 @@ a {
 .special-2-container p {
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 90%;
     font-size: 1rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-2-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-2-container p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-2-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 0.5rem;
 }
 
 .special-2-container p:nth-of-type(4) {
-    font-size: 0.3rem;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
     text-align: center;
 }
 
 .special-2-container p:nth-of-type(5) {
-    font-size: 0.3rem;
+    font-size: 0.6rem;
     text-align: center;
-    margin: 0 2rem;
+}
+.special-2-container p:nth-of-type(6) {
+    font-size: 0.6rem;
+    text-align: center;
 }
 
 .special-3-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.3rem;
+    padding-top: 1.4rem;
     width: 50%;
-    height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-002-nachos.jpg');
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-002-nachos.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -651,22 +721,23 @@ a {
 .special-3-container p {
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 90%;
     font-size: 1rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-3-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-3-container p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-3-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -675,10 +746,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.3rem;
+    padding-top: 1.4rem;
     width: 50%;
-    height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-01-date-night.jpg');
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-01-date-night.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -687,22 +758,22 @@ a {
 .special-4-container p {
     margin: 0;
     padding: 0;
-    width: 60%;
-    font-size: 1rem;
+    width: 80%;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-4-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-4-container p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-4-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 0.8rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -829,39 +900,30 @@ a {
 
 .fireball-pizza-information {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: var(--secondary-color);
     padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .fireball-pizza-hours {
-    width: 100%;
-    text-align: center;
+    width: 80%;
+    padding: 20px;
 }
 
 .fireball-pizza-hours-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     padding-bottom: 1rem;
 }
 
 .fireball-pizza-hours-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: var(--primary-color);
-    font-size: 0.8rem;
-    text-align: left;
+    font-size: 1rem;
 }
 
 .fireball-pizza-hours-content p {
@@ -869,30 +931,29 @@ a {
 }
 
 .fireball-pizza-address {
-    width: 90%;
-    text-align: center;
+    padding: 20px;
+    width: 80%;
 }
 
 .fireball-pizza-address-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     padding-bottom: 1rem;
+    width: 80%;
 }
 
 .fireball-pizza-address-content {
-    display: inline-block;
-    text-align: left;
+    /* display: inline-block;
+    text-align: left; */
     color: var(--primary-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .fireball-pizza-address-content p {
     font-weight: 400;
+    width: 100%;
 }
 
 .fireball-pizza-address-content p:nth-of-type(1) {
@@ -905,26 +966,22 @@ a {
 }
 
 .fireball-pizza-contact {
-    width: 90%;
-    text-align: center;
+    width: 80%;
+    padding: 20px;
 }
 
 .fireball-pizza-contact-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 .fireball-pizza-contact-content {
-    display: inline-block;
-    text-align: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--primary-color);
+    width: 100%;
 }
 
 .fireball-pizza-contact-content p {
@@ -936,6 +993,16 @@ a {
 }
 
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 321px) {
+    .floating-nav-bar li {
+        font-size: 0.5rem;
+    }
+
+    .mobile-home-nav-list a {
+        font-size: 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
 }
@@ -1026,7 +1093,6 @@ a {
         z-index: -1;
         top: 0;
         opacity: 0;
-        transition: 0.3s ease;
     }
 
     .floating-nav-bar.active { 
@@ -1049,7 +1115,6 @@ a {
         padding: 0 20px;
         opacity: 1;
         font-weight: 600;
-        transition: background-color 1s ease;
     }
     
     .floating-nav-list a:last-child {
@@ -1057,7 +1122,6 @@ a {
     }
     
     .floating-nav-list a:hover {
-        /* background-color: rgb(77, 77, 80); */
         padding: 0 20px;
         opacity: 1;
         color: white;
@@ -1082,7 +1146,6 @@ a {
 
     .nav-list li {
         font-size: 0.8rem;
-        /* margin: 0 2rem; */
         padding: 0 20px;
     }
 
@@ -1103,12 +1166,15 @@ a {
         width: 35%;
         font-size: 2.2rem;
         margin-right: 1rem;
+        text-align: left;
     }
 
     .story-section-2 {
         width: 45%;      
         font-size: 1rem;
         margin-left: 1rem;
+        margin-top: 0;
+        text-align: left;
     }
 
     .showcase-container-1 {
@@ -1181,6 +1247,15 @@ a {
     .special-1-container {
         padding-top: 3rem;
         height: 250px;
+    }
+
+    .specials-container-header {
+        justify-content: flex-start;
+    }
+    
+    .specials-container-header p {
+        color: var(--primary-color);
+        margin-left: 3rem;
     }
     
     .special-1-container p:nth-of-type(1) {
@@ -1264,7 +1339,9 @@ a {
 
     .fireball-pizza-information {
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
+        align-items: flex-start;
         height: 400px;
         width: 100%;
         background-color: var(--secondary-color);
@@ -1278,12 +1355,12 @@ a {
 
     .fireball-pizza-hours-header {
         justify-content: flex-start;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
     
     .fireball-pizza-hours-content {
         display: inline-block;
-        font-size: 0.3rem;
+        /* font-size: 0.3rem; */
     }
     
     .fireball-pizza-hours-header {
@@ -1496,7 +1573,6 @@ a {
     }
     
     .fireball-pizza-address-content {
-
         font-size: 0.8rem;
     }
     
